@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Demo</h2>
+    <hr>
+    <h3>Register Form</h3>
+    <form action="D05-form.login.html">
+        <div>
+            <label for="">user account: </label>
+            <input type="text" name="user" id="user"
+            placeholder="nhap ten tai khoan" required>
+        </div>
+
+        <div>
+            <label for="">password: </label>
+            <input type="text" name="pass" id="pass" required>
+        </div>
+
+        <div>
+            <label for="">gender: </label>
+            <input type="radio" name="gender" id="gender" 
+            value="male" checked> Male  
+            <input type="radio" name="gender" id="gender" 
+            value="female"> Female
+        </div>
+
+        <div>
+            <label for="">Hobbies: </label>
+            <input type="checkbox" name="hobbies_1" id="hobbies"
+            value="da banh"> football
+
+            <input type="checkbox" name="hobbies_2" id="hobbies"
+            value="an hang" checked> eating-out
+
+            <input type="checkbox" name="hobbies_3" id="hobbies"
+            value="nghe nhac" checked> listening music
+        </div>
+
+        <div>
+            <label for="">City: </label>
+            <select name="city" id="city">
+                <option value="SG">Sai Gon</option>
+                <option value="HN">Ha Noi</option>
+                <option value="CT">Can Tho</option>
+                <option value="DN">Da Nang</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Date of birthday: </label>
+            <input type="date" name="dob" id="dob" 
+            min="1900-01-31" max="now"
+            value="2003-02-07">
+        </div>
+
+        <div>
+            <label for="">Ranking: </label>
+            <input type="number" name="rank" id="rank"
+            min="1" max="5" value="3">
+        </div>
+
+        <div>
+            <label for="">Comment: </label>
+            <textarea name="comment" id="comment" cols="50" rows="5">
+                comment here
+            </textarea>
+        </div>
+        
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+
+</body>
+</html>

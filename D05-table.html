@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+    <style>
+        .bangDS{
+            font-family: 'Segoe UI', Tahoma, Geneva,
+             Verdana, sans-serif;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            border: solid brown thin;
+            padding: 0.5rem;
+            text-align: center;
+            color: red;
+            width: 75%;
+        }
+        .bangDS td, th{
+            border: burlywood solid thin;
+            padding: 0.2rem 1rem;
+        }
+
+        .bangDS td:nth-child(2){
+            text-align: right;
+        }
+
+        .bangDS caption{
+            color: lightyellow;
+            background-color: lightseagreen;
+            padding: 0.5rem;
+            font-size: 120%;
+        }
+    </style>
+<body>
+    <h2>Table Demo</h2>
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>Ho ten</th>
+            <th>Nam sinh</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td>Dam Quan</td>
+            <td>2003</td>
+            <td>quanle@fpt.edu.vn</td>
+        </tr>
+
+        <tr>
+            <td>Bich Tram</td>
+            <td>2000</td>
+            <td>tram@fpt.edu.vn</td>
+        </tr>
+
+        <tr>
+            <td>Bao Minh</td>
+            <td>2003</td>
+            <td>minh@fpt.edu.vn</td>
+        </tr>
+
+    </table>
+    <hr>
+    
+    <table class="bangDS">
+        <caption>Danh sach lop</caption>
+        <tr>
+            <th>Ho ten</th>
+            <th>Nam sinh</th>
+            <th>Email</th>
+        </tr>
+
+        <tr style="height: 4rem;">
+            <td style="vertical-align: top;">Dam Quan</td>
+            <td style="vertical-align: middle;">2003</td>
+            <td style="vertical-align: bottom;">quanle@fpt.edu.vn</td>
+        </tr>
+
+        <tr>
+            <td>Bich Tram</td>
+            <td>2000</td>
+            <td>tram@fpt.edu.vn</td>
+        </tr>
+
+        <tr>
+            <td>Bao Minh</td>
+            <td>2003</td>
+            <td>minh@fpt.edu.vn</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Tổng số sv</td>
+            <td>3</td>
+        </tr>
+
+    </table>
+</body>
+</html>

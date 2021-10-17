@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+
+    <link rel="stylesheet" href="css/d03-css.css">
+
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div p {
+            display: none;
+            padding: 20px;
+        }
+
+        p img {
+            border: solid tan medium;
+            padding: 1rem;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        p:first-child {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pseudo class Demo</h2>
+    <hr>
+
+    <p>
+        <a href="D03-link.css.html">home style</a>
+        <a href="D03-test.css.html">text style</a>
+        <a href="D03-pseudo.class.html">pseudo-class</a>
+        <a href="D03-pseudo.class2.html">pseudo-class-2</a>
+        <a href="D03-indent.css.html">indent style</a>
+        <a href="D03-border.css.html">border style</a>
+    </p>
+
+    <div>Hover over this div element to show the p element
+        <p> Hi, everyone ! <br>
+            <img width="300" src="image/Aptech.jpg" alt="">
+        </p>
+        <p>
+            This is my school...
+        </p>
+    </div>
+</body>
+
+</html>
