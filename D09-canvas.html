@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        canvas{
+            background-color: lightcyan;
+            border: blue solid medium;
+        }
+    </style>
+</head>
+<body>
+    <h2>Canvas Demo</h2>
+    <hr>
+    <input type="button" value="draw line" id="btnLine"
+    onclick="drawLine();">
+
+    <input type="button" value="draw Rectangle" id="btnRect"
+    onclick="drawRect();">
+
+    <input type="button" value="draw Circle" id="btnCir"
+    onclick="drawCir();">
+
+    <br></br>
+    <canvas width="600" height="300" id="bv"></canvas>
+
+    <div>
+        <img width="300" src="image/Xuân.jpg" alt="" 
+        id="h1" onclick="drawImage(1)">
+        <img width="300" src="image/Hạ.jpg" alt="" 
+        id="h2" onclick="drawImage(2)">
+        <img width="300" src="image/Thu.jpg" alt="" 
+        id="h3" onclick="drawImage(3)">
+    </div>
+    
+</body>
+
+<script src="js/D09-canvas.js">
+</script>
+
+</html>

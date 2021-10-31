@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+
+    <style>
+        table.menu{
+            background-color: linen;
+        }
+
+        .menu td{
+            padding: 0.3rem 1.5rem;
+            border-right: peru thin solid;
+        }
+        .menu a{
+            text-decoration: none;
+        }
+        p{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img width="300" src="image/Aptech.jpg" alt="">
+    </div>
+    <p id="profile"></p>
+    <h2>My Gallery</h2>
+    <p>Our pictures since 2000</p>
+    <hr>
+    <table class="menu">
+        <tr>
+            <td><a href="">Home</a></td>
+            <td><a href="">Contact us</a></td>
+            <td><a href="">About us</a></td>
+            <td><a href="">FAQs</a></td>
+            <td><a href=""></a></td>
+        </tr>
+    </table>
+
+    <script>
+        //doan code nay se chay sau khi trang web duoc load thanh cong
+        window.onload=function(){
+            //lay du lieu trong bien session storage va hien thi trong doan van ban p co id="profile"
+
+            let uid = sessionStorage.getItem("uid");
+            let pwd = sessionStorage.getItem("pwd");
+            if(uid != null && pwd != null){
+                document.getElementById("profile").innerHTML=`Welcome Mr./Ms ${uid}! <br>Your pass is ${pwd}.`;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
